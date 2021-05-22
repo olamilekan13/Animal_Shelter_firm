@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Favicon -->
+    <link rel="icon" href="image/favicon.png" type="image/x-icon" />
+    <!-- Animate CSS -->
+    <link href="vendors/animate/animate.css" rel="stylesheet">
+    <!-- Icon CSS-->
+    <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
+    <!-- Camera Slider -->
+    <link rel="stylesheet" href="vendors/camera-slider/camera.css">
+    <!-- Owlcarousel CSS-->
+    <link rel="stylesheet" type="text/css" href="vendors/owl_carousel/owl.carousel.css" media="all">
+    <!--Bootstrap JS-->
     <link href="css/bootstrap.bundle.min.js" rel="stylesheet" type="text/css">
+    <!-- Bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!--Bootstrap Jquery-->
     <link href="css/jquery.slim.min.js" rel="stylesheet" type="text/css">
+    <!--Theme CSS-->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,10 +25,11 @@
     <title>Animal Shelter Website</title>
 </head>
 <body>
+
     <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top ">
     <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <a class="navbar-brand" href="#">ANIMAL SHELTER</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -40,52 +55,65 @@
   </nav>
   
   <header>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url('image/slider-bg1.jpg')">
-          <div class="carousel-caption d-none d-md-block">
-            <h2 class="display-4">First Slide</h2>
-            <p class="lead">This is a description for the first slide.</p>
-          </div>
-        </div>
+    <div id="mycarousel" class="carousel slide" data-ride="carousel" data-interval="500">
+        <ol class="carousel-indicators">
+          <li data-target="mycarousel" data-slide-to="0" class="active"> </li>
+          <li data-target="mycarousel" data-slide-to="1"> </li>
+          <li data-target="mycarousel" data-slide-to="2"> </li>
+          <li data-target="mycarousel" data-slide-to="3"> </li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="image/slider-bg133.jpg">
+              <div class="carousel-caption">
+              <h1 class=" wow fadeInUp animated">Welcome to our</h1>
+              <h2 class=" wow fadeInUp animated" data-wow-delay="0.5s">CLEAN, MODERN, MULTIPURPOSE THEME</h2>
+                <a class="btn btn-success btn-lg" href="#" role="button">Book Us</a>
+              </div>
+              </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('image/slider-bg133.jpg')">
-          <div class="carousel-caption d-none d-md-block">
-            <h2 class="display-4">Second Slide</h2>
-            <p class="lead">This is a description for the second slide.</p>
-          </div>
-        </div>
+        <div class="carousel-item">
+            <div class="item active">
+              <img src="image/slider-bg2.jpg">
+              <div class="carousel-caption d-none d-md-block">
+              <h1 class=" wow fadeInUp animated">Welcome to our</h1>
+              <h2 class=" wow fadeInUp animated" data-wow-delay="0.5s">CLEAN, MODERN, MULTIPURPOSE THEME</h2>
+                <a class="btn btn-success btn-lg" href="#" role="button">Book Us</a>
+              </div>
         <!-- Slide Three - Set the background image for this slide in the line below -->
+              <div class="carousel-item">
+                <div class="item active">
+                  <img src="image/slider-bg2.jpg">
+                  <div class="carousel-caption d-none d-md-block">
+                  <h1 class=" wow fadeInUp animated">Welcome to our</h1>
+                  <h2 class=" wow fadeInUp animated" data-wow-delay="0.5s">CLEAN, MODERN, MULTIPURPOSE THEME</h2>
+                    <a class="btn btn-success btn-lg" href="#" role="button">Book Us</a>
+                  </div>
+        <!-- Slide four - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('image/static-bg.jpg')">
           <div class="carousel-caption d-none d-md-block">
             <h2 class="display-4">Third Slide</h2>
             <p class="lead">This is a description for the third slide.</p>
           </div>
         </div>
+      <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+
+      <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span>  </a>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
     </div>
   </header>
   
   <!-- Page Content -->
-  <section class="py-5">
-    <div class="container">
-      <h1 class="display-4">Full Page Image Slider</h1>
-      <p class="lead">The background images for the slider are set directly in the HTML using inline CSS. The images in this snippet are from <a href="https://unsplash.com">Unsplash</a>, taken by <a href="https://unsplash.com/@joannakosinska">Joanna Kosinska</a>!</p>
-    </div>
-  </section>
+  <div class="container">
+      <div class="col 4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolor magni itaque labore quam error dolorem sint nihil architecto optio possimus, commodi suscipit neque hic aperiam nulla aut, voluptatum ea?
+      </div>
+      <div class="col 4">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quis commodi, atque possimus nobis praesentium totam aliquid? Sed, voluptatum nostrum architecto odio natus, iusto minima distinctio necessitatibus perspiciatis, veniam tempore?
+      </div>
+      <div class="col 4">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste obcaecati, odit soluta libero id, tenetur aliquid quisquam laudantium temporibus, optio eius inventore. Nulla laborum natus doloribus distinctio facere deleniti optio!
+      </div>
+  </div>
 </body>
 </html>
